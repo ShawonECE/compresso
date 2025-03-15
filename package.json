@@ -1,0 +1,14 @@
+{
+  "name": "compression_variable_length",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compress": "node ./src/compress.js",
+    "decompress": "node ./src/decompress.js"
+  },
+  "author": "shawon",
+  "license": "ISC",
+  "description": ""
+}

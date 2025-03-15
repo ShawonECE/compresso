@@ -1,0 +1,4 @@
+data/compressed/*
+data/input/*
+data/output/*
+node_modules
