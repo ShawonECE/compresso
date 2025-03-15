@@ -1,8 +1,3 @@
-/data/**/*.txt
-/data/**/*.bin
-/data/**/*.csv
-/data/**/*.json
-/data/**/*.html
-/data/**/*.yml
-/data/**/*.md
+/data/**/output.*
+/data/**/input.*
 node_modules
