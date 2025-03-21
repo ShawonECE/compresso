@@ -19,8 +19,8 @@ export const addMetadataToCompressedBuffer = (compressedBuffer, huffmanTree, pad
 };
 
 // Main function to compress a file.
-export const compressFile = (inputFile, outputFile, fileExtension) => {
-    const text = readFileContent(inputFile);
+export const compressFile = (inputFilePath, outputFilePath, fileExtension) => {
+    const text = readFileContent(inputFilePath);
     
     const huffmanTree = buildHuffmanTree(text);
     const huffmanCodes = generateHuffmanCodes(huffmanTree);
@@ -33,5 +33,5 @@ export const compressFile = (inputFile, outputFile, fileExtension) => {
     const compressedBinaryBuffer = binaryStringToBuffer(paddedBinary);
     const compressedDataWithMetadata = addMetadataToCompressedBuffer(compressedBinaryBuffer, huffmanTree, paddingLength, fileExtension);
 
-    writeCompressedFile(outputFile, compressedDataWithMetadata);
+    writeCompressedFile(outputFilePath, compressedDataWithMetadata, inputFilePath);
 };
