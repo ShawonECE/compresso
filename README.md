@@ -55,6 +55,7 @@ text-compression-tool/
 │   │   ├── fileUtils/
 |   │   │   ├── readFile.js
 |   │   │   ├── writeFile.js
+|   │   │   ├── fileSize.js
 │   │   ├── text/
 |   │   │   ├── text-compression/
 |   |   │   │   ├── compressor.js
